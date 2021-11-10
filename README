@@ -1,0 +1,3 @@
+The external JSON can be accessed via a Github link: "https://han20100128.github.io/wdos2-a3/coffeeShop.json"
+However, the same JSON file is also included in this package, which can be accessed and used in the website through local host.
+Another option is to use directly the constant JSON coffeeShop in the script, which is currently made as a comment.
