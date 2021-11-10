@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="description" content="Home page">
+    <link rel="stylesheet" href="main.css">
+    <link rel="manifest" href="manifest.webmanifest" >
+    <title>Home Page</title>
+</head>
+<body>
+    <header>
+        <!-- <h1><a href="index.html" target="_blank">James' Coffee Shop</a></h1>
+        <nav>
+            <a href="index.html">home</a> 
+            <a href="about.html">about us</a> 
+            <a href="coffee.html">coffee process</a> 
+            <a href="menu.html">menu</a>
+        </nav> -->
+            <h1>James' Coffee Shop</h1>
+            <nav>
+                <a href="index.html">home</a> 
+                <a href="about.html">about us</a> 
+                <a href="coffee.html">coffee process</a> 
+                <a href="menu.html">menu</a>
+            </nav>
+    </header>
+    <main id="mainHome">
+        <div id="opening">
+            <p>WELCOME BACK</p>
+            <p><a href="index.html">home</a></p>
+            <p><a href="about.html">about us</a></p>
+            <p><a href="coffee.html">coffee story</a></p>
+            <p><a href="menu.html">menu</a></p>
+        </div>
+        <div id="pageIntro">
+            
+            <div class="subpage">
+                <img class="picIntro" src="images/home/aboutUs.jpg" alt="about us">
+                <!-- https://unsplash.com/photos/AeECO_I_8Xg -->
+                <div>
+                    <h2><a href="about.html">about us</a></h2>
+                    <p>Almost before we knew it, we had left the ground. Almost before we knew it, we had left the ground. Almost before we knew it, we had ...</p>
+                </div>
+            </div>
+            <div class="subpage">
+                <img class="picIntro" src="images/home/coffee.jpeg" alt="coffee story">
+                <!-- https://unsplash.com/photos/zwQTkDfzWS0 -->
+                <div>
+                    <h2><a href="coffee.html">coffee story</a></h2>
+                    <p>Almost before we knew it, we had left the ground. Almost before we knew it, we had left the ground. Almost before we knew it, we had ...</p>
+                </div>
+            </div>
+            <div class="subpage">
+                <img class="picIntro" src="images/home/menu.jpg" alt="menu">
+                <!-- https://unsplash.com/photos/W95aNU0Lk9s?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink -->
+                <div>
+                    <h2><a href="menu.html">menu</a></h2>
+                    
+                    <p>Almost before we knew it, we had left the ground. Almost before we knew it, we had left the ground. Almost before we knew it, we had ...</p>
+                </div>    
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a href="prototype.html" target="_blank"><img class="app" src="images/footer/messenger.png" alt="Messenger"></a>
+        <a href="prototype.html" target="_blank"><img class="app" src="images/footer/fb.png" alt="Facebook"></a>
+        <div id="info">
+            <p>James' Coffee Shop</p>
+            <p>1 Hai Ba Trung, Hanoi</p>
+            <p>+84 123456789</p>
+            <p>jamescs@gmail.com</p>
+        </div>
+        <a href="prototype.html" target="_blank"><img class="app" src="images/footer/twitter.png" alt="Twitter"></a>
+        <a href="prototype.html" target="_blank"><img class="app" src="images/footer/ig.png" alt="Instagram"></a>
+    </footer>
+</body>
+<script>
+    //check whether browser support service workers
+    if ('serviceWorker' in navigator) {    
+        //wait until page loaded to avoid delaying rendering    
+        window.addEventListener('load', function() {        
+            //register service worker        
+            navigator.serviceWorker.register('serviceworker.js').then(            
+                function(registration) {   
+                    console.log('Service worker registration successful',registration);            
+                },             
+                function(err) {           
+                    console.log('Service worker registration failed', err);        
+                });    
+            }
+        );
+    } 
+</script>
+</html>

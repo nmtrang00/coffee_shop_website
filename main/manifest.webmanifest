@@ -1,0 +1,22 @@
+{
+    "name": "James' Coffee Shop",
+    "short_name": "James'CF",
+    "description": "Welcome to James' Coffee Shop!",
+    "icons": [
+        {
+            "src": "images/icon/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "images/icon/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#222723",
+    "background_color": "#222723",
+    "start_url": "index.html",
+    "display": "standalone"
+}

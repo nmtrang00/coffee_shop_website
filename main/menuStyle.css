@@ -1,0 +1,54 @@
+@import "main.css";
+
+main{
+    font-size: 3vw;
+}
+
+img{
+    width: 88vw;
+    text-align: center;
+}
+
+main a{
+    font-weight: bold;
+}
+p:nth-child(1){
+    font-style: italic;
+}
+
+.drink div{
+    margin-right: 3vw;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+h2:last-of-type, main p:last-child{
+    text-align: center;
+}
+
+#info p{
+    font-style: normal;
+}
+@media screen and (min-width:1025px){
+    main{
+        font-size: 1.5vw;
+    }
+
+    img{
+        width: 27vw;
+    }
+    #drinks{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    #drinks p, .drink div{
+        width: 27vw;
+        margin: 0vw 0 0 0;
+        padding:0;
+    }
+
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="description" content="Event examples">
+    <link rel="stylesheet" href="main.css">
+    <link rel="manifest" href="manifest.webmanifest" >
+    <title>Home Page</title>
+</head>
+<body>
+    <header>
+        <h1>James' Coffee Shop</h1>
+        <nav>
+            <a href="index.html">home</a> 
+            <a href="about.html">about us</a> 
+            <a href="coffee.html">coffee process</a> 
+            <a href="menu.html">menu</a>
+        </nav>
+    </header>
+    
+    <main>
+        <div>
+            <h2>Table booking</h2>
+            <p>Have a look at the map below, choose your favorite place and fill in the form at the end of the page.</p>
+            <img id="floorPlan" src="images/subpage/floorplan.jpg" alt="Floor plan of the coffee shop">
+            <!-- https://pin.it/5cKsk7I -->
+            <p>The fields with * are compulsory.</p>
+            <form>
+                <label for="name">Name (*):</label><br>
+                <input type="text" name="name" required><br><br>
+                <label for="table">Table (*):</label>
+                    <select name="table">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="A1">A1</option>
+                        <option value="A2">A2</option>
+                        <option value="A3">A3</option>
+                        <option value="A4">A4</option>
+                        <option value="B1">B1</option>
+                        <option value="B2">B2</option>
+                        <option value="B3">B3</option>
+                        <option value="B4">B4</option>
+                        <option value="C1">C1</option>
+                </select><br><br>
+                <label for="phone">Phone no. (*):</label><br>
+                <input type="tel" name="phone" required><br><br>
+                <label for="email">Email (*):</label><br>
+                <input type="email" name="email" required><br><br>
+                <button>SUBMIT</button><br><br>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <a href="prototype.html" target="_blank"><img class="app" src="images/footer/messenger.png" alt="Messenger"></a>
+        <a href="prototype.html" target="_blank"><img class="app" src="images/footer/fb.png" alt="Facebook"></a>
+        <div id="info">
+            <p>James' Coffee Shop</p>
+            <p>1 Hai Ba Trung, Hanoi</p>
+            <p>+84 123456789</p>
+            <p>jamescs@gmail.com</p>
+        </div>
+        <a href="prototype.html" target="_blank"><img class="app" src="images/footer/twitter.png" alt="Twitter"></a>
+        <a href="prototype.html" target="_blank"><img class="app" src="images/footer/ig.png" alt="Instagram"></a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,230 @@
+body{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 3vw;
+    color: #222723;
+    margin: 0;
+    position: relative;
+    min-height: 80vh;
+}
+
+a, a:visited{
+    text-decoration: none; 
+    color: #222723;
+}
+
+a:hover{
+    font-weight: bolder;
+}
+
+header{
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-width: 100vw;
+    max-width: 100vw;
+}
+
+main{
+    margin: 10vw 0vw 0vw 0vw;
+    padding-bottom: 30vh;
+    min-width: 100vw;
+    max-width: 100vw;
+}
+
+#mainHome{
+    margin: 0;
+}
+
+main>div{
+    /* Direct child of type div */
+    margin: 0vw 5vw 0vw 5vw;
+}
+
+#opening{
+    background-size: cover;
+    color:#ffff;
+    text-align: center;
+    margin: 0 0 0 0;
+}
+
+.subpage, footer{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer{
+    background-color: #222723;
+    color:#ffff;
+    text-align: center;
+    vertical-align: center;
+
+    position: absolute;
+    bottom: -11vh;
+    min-width: 100vw;
+    max-width: 100vw;
+}
+
+@media screen and (min-width:0px) and (max-width:1024px){
+    /* Header  & Navigation bar */
+    main{
+        margin-top: 15.4vw;
+        padding-bottom: 25vw;
+    }
+
+    header {
+        display: inline-block;
+        text-align: center;
+        vertical-align: center;
+        font-size: 3vw;
+        font-weight: bold;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        background-color: #ffff;
+        min-width: 100vw;
+        z-index: 1;
+        font-size: 4.5vw;
+    }
+
+    nav a {
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+        display: block;
+    }
+
+    nav a:last-child{
+        padding-bottom: 6vw;
+    }
+
+    header:hover nav {display: block;}
+
+    #opening{
+        background-image: url('images/home/home.jpg');
+        /* https://unsplash.com/photos/180H4qkbWbA?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink */
+        min-height: 95vh;
+        min-width: 100vw;
+        max-width: 100vw;
+
+        font-size:6vw;
+        font-weight: 3vw;
+        vertical-align: center;
+    }
+
+    #opening a{
+        color:#ffff;
+    }
+    #opening p {
+        padding-bottom: 3vw;
+    }
+    #opening p:first-child{
+        padding-top: 15vw;
+        padding-bottom: 3vw;
+        font-size: 9vw;
+        font-weight: 550;
+    }
+    
+    /* Footer */
+    .app{
+        width: 5vw;
+    }
+    
+    #info > :first-child{
+        font-weight: bolder;
+    }
+    ol{
+        margin-left: -6vw;
+    }
+
+}
+
+@media screen and (min-width:1025px){
+    /* Header & Navigation bar */
+    header {
+        text-align: center;
+        vertical-align: center;
+        font-size: 1.5vw;
+    }
+
+    nav {
+        min-width: 50vw;
+        font-size: 2vw;
+    }
+
+    header, nav{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    main{
+        font-size: 2vw;
+    }
+    #opening{
+        background-image: url('images/home/home_desktop.jpg');
+        /* https://unsplash.com/photos/Cb1BFK0BjHE?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink */
+        min-width: 100vw;
+        max-width: 100vw;
+
+        padding-top: 20vw;
+        padding-bottom: 18vw;
+
+        font-size:9vw;
+        font-weight: 550;
+    }
+
+    #opening a, #opening p:last-child{
+        display: none;
+    }
+
+    /* Footer */
+    footer{
+        font-size: 1.5vw;
+    }
+    .app{
+        width: 3vw;
+    }
+
+    #info > :first-child{
+        font-weight: bolder;
+    }
+
+}
+
+/* Intro of subpage */
+#pageIntro{
+    margin: 6vw;
+}
+
+#pageIntro img{
+    width: 40vw;
+}
+
+.subpage {
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+}
+
+.subpage div{
+    margin-left: 4.5vw;
+}
+
+#coffeePic{
+    max-width: 88vw;
+    margin: auto;
+}
+
+/* Table booking page */
+#floorPlan{
+    width: 88vw;
+}
+
+form label{
+    font-weight: bold;
+}
